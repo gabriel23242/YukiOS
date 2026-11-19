@@ -1,3 +1,11 @@
+[build]
+  base = "webos-desktop"
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
 [[headers]]
   for = "/static/apps/libresprite/*"
   [headers.values]
